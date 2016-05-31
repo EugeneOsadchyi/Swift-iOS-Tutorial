@@ -13,6 +13,7 @@
 		635C56F71CF5FCB500CD2DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635C56F61CF5FCB500CD2DAA /* Assets.xcassets */; };
 		635C56FA1CF5FCB500CD2DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C56F81CF5FCB500CD2DAA /* LaunchScreen.storyboard */; };
 		635C57051CF5FCB600CD2DAA /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C57041CF5FCB600CD2DAA /* FoodTrackerTests.swift */; };
+		637D89C61CFDCDF300BDA704 /* RaitingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D89C51CFDCDF300BDA704 /* RaitingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		635C57001CF5FCB600CD2DAA /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C57041CF5FCB600CD2DAA /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		635C57061CF5FCB600CD2DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637D89C51CFDCDF300BDA704 /* RaitingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaitingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				635C56EF1CF5FCB500CD2DAA /* AppDelegate.swift */,
 				635C56F11CF5FCB500CD2DAA /* ViewController.swift */,
+				637D89C51CFDCDF300BDA704 /* RaitingControl.swift */,
 				635C56F31CF5FCB500CD2DAA /* Main.storyboard */,
 				635C56F61CF5FCB500CD2DAA /* Assets.xcassets */,
 				635C56F81CF5FCB500CD2DAA /* LaunchScreen.storyboard */,
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637D89C61CFDCDF300BDA704 /* RaitingControl.swift in Sources */,
 				635C56F21CF5FCB500CD2DAA /* ViewController.swift in Sources */,
 				635C56F01CF5FCB500CD2DAA /* AppDelegate.swift in Sources */,
 			);
