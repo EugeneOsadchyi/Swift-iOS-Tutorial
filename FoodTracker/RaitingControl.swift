@@ -12,7 +12,11 @@ class RatingControl: UIView {
 
     // Mark: Properties
 
-    var rating = 0
+    var rating = 0 {
+        didSet {
+            setNeedsLayout()
+        }
+    }
     var ratingButtons = [UIButton]()
 
     let spacing = 5
@@ -24,9 +28,17 @@ class RatingControl: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
+        let emptyStarImage = UIImage(named: "emptyStar")
+        let filledStarImage = UIImage(named: "filledStar")
+
         for _ in 0..<starCount {
             let button = UIButton()
-            button.backgroundColor = UIColor.redColor()
+
+            button.setImage(emptyStarImage, forState: .Normal)
+            button.setImage(filledStarImage, forState: .Selected)
+            button.setImage(filledStarImage, forState: [.Highlighted, .Selected])
+
+            button.adjustsImageWhenHighlighted = false
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(_:)), forControlEvents: .TouchDown)
 
             ratingButtons += [button]
@@ -46,6 +58,8 @@ class RatingControl: UIView {
             buttonFrame.origin.x = CGFloat(index * (buttonSize + spacing))
             button.frame = buttonFrame
         }
+
+        updateButtonSelectionStates()
     }
 
     override func intrinsicContentSize() -> CGSize {
@@ -59,6 +73,15 @@ class RatingControl: UIView {
     // MARK: Button Action
 
     func ratingButtonTapped(button: UIButton) {
-        print("Button pressed 👍")
+        rating = ratingButtons.indexOf(button)! + 1
+
+        updateButtonSelectionStates()
+    }
+
+    func updateButtonSelectionStates() {
+        for (index, button) in ratingButtons.enumerate() {
+            // If the index of a button is less than the rating, that butto should be selected.
+            button.selected = index < rating
+        }
     }
 }
