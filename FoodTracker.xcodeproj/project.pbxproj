@@ -17,6 +17,7 @@
 		637D89D01CFF06C900BDA704 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D89CF1CFF06C900BDA704 /* Meal.swift */; };
 		637D89D11CFF06C900BDA704 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D89CF1CFF06C900BDA704 /* Meal.swift */; };
 		637D89D71CFF18A100BDA704 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D89D61CFF18A100BDA704 /* MealTableViewCell.swift */; };
+		637D89D91CFF1E3A00BDA704 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D89D81CFF1E3A00BDA704 /* MealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		637D89C51CFDCDF300BDA704 /* RaitingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaitingControl.swift; sourceTree = "<group>"; };
 		637D89CF1CFF06C900BDA704 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		637D89D61CFF18A100BDA704 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		637D89D81CFF1E3A00BDA704 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				635C56F11CF5FCB500CD2DAA /* ViewController.swift */,
 				637D89C51CFDCDF300BDA704 /* RaitingControl.swift */,
 				635C56F31CF5FCB500CD2DAA /* Main.storyboard */,
+				637D89D81CFF1E3A00BDA704 /* MealTableViewController.swift */,
 				635C56F61CF5FCB500CD2DAA /* Assets.xcassets */,
 				635C56F81CF5FCB500CD2DAA /* LaunchScreen.storyboard */,
 				635C56FB1CF5FCB500CD2DAA /* Info.plist */,
@@ -211,6 +214,7 @@
 				637D89D01CFF06C900BDA704 /* Meal.swift in Sources */,
 				637D89C61CFDCDF300BDA704 /* RaitingControl.swift in Sources */,
 				635C56F21CF5FCB500CD2DAA /* ViewController.swift in Sources */,
+				637D89D91CFF1E3A00BDA704 /* MealTableViewController.swift in Sources */,
 				635C56F01CF5FCB500CD2DAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
