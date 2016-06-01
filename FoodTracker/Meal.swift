@@ -9,7 +9,7 @@
 import UIKit
 
 class Meal {
-    // Mark: Propperties
+    // MARK: Propperties
 
     var name: String
     var photo: UIImage?

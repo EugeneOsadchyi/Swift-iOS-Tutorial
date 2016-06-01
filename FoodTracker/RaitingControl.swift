@@ -10,7 +10,7 @@ import UIKit
 
 class RatingControl: UIView {
 
-    // Mark: Properties
+    // MARK: Properties
 
     var rating = 0 {
         didSet {
